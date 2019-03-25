@@ -1229,48 +1229,47 @@ Coming Soon...
                     </div>
                 </div>
                 <!-- Section title end -->
-                <form  method="post" id="form">
-                    <div class="row">
-                        <div class="col-12 col-md">
-						
-                            <!-- Name input -->
-                            <input type="text" name="name" placeholder="Name" id="sendername" required>
-                            <!-- Email input -->
-                            <input type="email" name="contact_email" placeholder="Email" id="emailaddress" required>
-                        </div>
-                        <div class="col-12 col-md">
-                            <!-- Text input -->
-                            <textarea name="text" cols="30" rows="5" placeholder="Message" id="sendermessage" required></textarea>
-                        </div>
-                        <div class="col-12 col-md-auto text-center">
+                <form action="https://formspree.io/info@neoware.io" method="POST" id="form">
+<div class="row">
+<div class="col-12 col-md">
+
+<input type="text" name="name" placeholder="Name" id="sendername" required>
+
+<input type="email" name="_replyto" placeholder="Email" id="emailaddress" required>
+
+
+</div>
+
+
+<div class="col-12 col-md">
+
+<textarea name="text" cols="30" rows="5" placeholder="Message" id="sendermessage" required></textarea>
+</div>
+
+<div class="col-12 col-md-auto text-center">
                             <!-- Submit form button -->
                             <button class="submit bg-color-1"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
 							<img src="./wp-content/plugins/the_apparatus_extensions/modules/images/msg_loader.gif" class="img-responsive msg-loader" style="width:40px;height:40px;display: none;" alt="loader"/>
                         </div>
                     </div>
-  					<input type="hidden" name="email_subject" id="email_subject" value="" />
+  					<!-- <input type="hidden" name="email_subject" id="email_subject" value="" />
   					<input type="hidden" name="recipient_name" id="recipient_name" value="" />
 					<input type="hidden" name="recipient_email" id="recipient_email" value="" />
-
+ -->
 			
 
-
-			
-
-
-			
-
-
-			
 					
                 </form>
-				<div id="success_msg" class="alert alert-success">Message Sent</div>
-				<div id="error_msg" class="alert alert-danger">Sorry, Message Not Sent. Try again later.</div>
+				
             </div>
         </section>
+
+
+
+
 		
         <!-- End Contact us Section  -->
-        <script>
+<!--         <script>
             jQuery(document).ready(function(){
 				jQuery("#success_msg").hide();
 				jQuery("#error_msg").hide();
@@ -1328,7 +1327,7 @@ Coming Soon...
                     });
                 });
             });
-        </script>	
+        </script>	 -->
 		
 		
 <style>
